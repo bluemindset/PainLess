@@ -81,11 +81,25 @@ app.post("/api/employee/:index", (req, res) => {
     });
 });
 
-
-
 app.get("/api/generate", (req, res) => {
     console.log("h")
     generateXML(dataPath, req, res);
 });
+
+
+db.mongoose
+  .connect(`mongodb://${dbConfig.HOST}:${dbConfig.PORT}/${dbConfig.DB}`, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+  })
+  .then(() => {
+    console.log("Successfully connect to MongoDB.");
+    initial();
+  })
+  .catch(err => {
+    console.error("Connection error", err);
+    process.exit();
+  });
+
 
 app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));

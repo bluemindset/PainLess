@@ -3,9 +3,9 @@
   <CstmrCdtTrfInitn>
     <GrpHdr>
       <MsgId>default-message-id</MsgId>
-      <CreDtTm>2024-12-25T23:30:41.363Z</CreDtTm>
+      <CreDtTm>2024-12-27T13:31:07.737Z</CreDtTm>
       <NbOfTxs>2</NbOfTxs>
-      <CtrlSum>0.00</CtrlSum>
+      <CtrlSum>1.78</CtrlSum>
       <InitgPty>
         <Nm>Eletoyia Deep Tech Chain LTD</Nm>
         <Id>
@@ -22,7 +22,7 @@
       <PmtMtd>TRF</PmtMtd>
       <BtchBookg>1</BtchBookg>
       <NbOfTxs>2</NbOfTxs>
-      <CtrlSum>0.00</CtrlSum>
+      <CtrlSum>1.78</CtrlSum>
       <PmtTpInf>
         <SvcLvl>
           <Cd>SEPA</Cd>
@@ -60,7 +60,7 @@
           </CtgyPurp>
         </PmtTpInf>
         <Amt>
-          <InstdAmt Ccy="EUR">0.00</InstdAmt>
+          <InstdAmt Ccy="EUR">0.89</InstdAmt>
         </Amt>
         <ChrgBr>SLEV</ChrgBr>
         <Cdtr>
@@ -95,7 +95,7 @@
           </CtgyPurp>
         </PmtTpInf>
         <Amt>
-          <InstdAmt Ccy="EUR">0.00</InstdAmt>
+          <InstdAmt Ccy="EUR">0.89</InstdAmt>
         </Amt>
         <ChrgBr>SLEV</ChrgBr>
         <Cdtr>

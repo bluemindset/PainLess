@@ -6,17 +6,17 @@
       "bonus": "0",
       "iban": "CY88002001950000357025473758",
       "addressLine": "Agkastinas 24, Latsia, Nicosia, 2231",
-      "basicSalary": "0",
+      "basicSalary": "3",
       "normalHours": 174.4,
-      "overtimeHours": "0",
-      "workedHours": 189.4,
+      "overtimeHours": 0,
+      "workedHours": 174.4,
       "contributions": {
-        "amount": 0
+        "amount": 1
       },
       "deductions": {
-        "amount": 0
+        "amount": 1
       },
-      "finalSalary": "0.00"
+      "finalSalary": "0.89"
     },
     {
       "name": "Christakis Christodoulou",
@@ -24,21 +24,21 @@
       "bonus": "0",
       "iban": "CY30002001150000001102473200",
       "addressLine": "Agkastinas 24, Latsia, Nicosia, 2231",
-      "basicSalary": "0",
+      "basicSalary": "3",
       "normalHours": 173.33,
       "overtimeHours": 0,
       "workedHours": 173.33,
       "contributions": {
-        "amount": 0
+        "amount": 1
       },
       "deductions": {
-        "amount": 0
+        "amount": 1
       },
-      "finalSalary": "0.00"
+      "finalSalary": "0.89"
     }
   ],
   "details": {
-    "totalAmount": "0.00",
+    "totalAmount": "1.78",
     "companyName": "Eletoyia Deep Tech Chain LTD",
     "debtorName": "Eletoyia",
     "debtorCountry": "CY",
