@@ -1,0 +1,254 @@
+const fs = require("fs");
+const { create } = require("xmlbuilder2");
+
+async function generateXML(parsedData, parsedDetails, outputFilePath) {
+    try {
+        // Create the root of the XML document
+        const doc = create({ version: "1.0", encoding: "UTF-8" })
+            .ele("Document", {
+                xmlns: "urn:iso:std:iso:20022:tech:xsd:pain.001.001.03",
+                "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                "xsi:schemaLocation": "urn:iso:std:iso:20022:tech:xsd:pain.001.001.03 pain.001.001.03.xsd",
+            })
+            .ele("CstmrCdtTrfInitn");
+
+        // Add group header
+        const grpHdr = doc.ele("GrpHdr");
+        grpHdr.ele("MsgId", {}, "MessageID");
+        grpHdr.ele("CreDtTm", {}, new Date().toISOString());
+        grpHdr.ele("NbOfTxs", {}, parsedData.employees.length.toString());
+        grpHdr.ele("CtrlSum", {}, parsedDetails.totalAmount.toFixed(2));
+        const initgPty = grpHdr.ele("InitgPty");
+        initgPty.ele("Nm", {}, parsedDetails.companyName);
+        const id = initgPty.ele("Id").ele("OrgId").ele("Othr");
+        id.ele("Id", {}, parsedDetails.companyID);
+
+        // Add payment information
+        const pmtInf = doc.ele("PmtInf");
+        pmtInf.ele("PmtInfId", {}, "PmtInfId");
+        pmtInf.ele("PmtMtd", {}, "TRF");
+        pmtInf.ele("BtchBookg", {}, "1");
+        const pmtTpInf = pmtInf.ele("PmtTpInf");
+        pmtTpInf.ele("SvcLvl").ele("Cd", {}, "SEPA");
+        pmtInf.ele("ReqdExctnDt", {}, parsedDetails.executionDate);
+
+        // Add debtor information
+        const dbtr = pmtInf.ele("Dbtr");
+        dbtr.ele("Nm", {}, parsedDetails.debtorName);
+        dbtr.ele("PstlAdr").ele("Ctry", {}, parsedDetails.debtorCountry);
+        const dbtrId = dbtr.ele("Id").ele("OrgId");
+        dbtrId.ele("BICOrBEI", {}, parsedDetails.debtorBIC);
+        const dbtrAcct = pmtInf.ele("DbtrAcct");
+        dbtrAcct.ele("Id").ele("IBAN", {}, parsedDetails.debtorIBAN);
+        dbtrAcct.ele("Ccy", {}, parsedDetails.currency);
+        pmtInf.ele("DbtrAgt").ele("FinInstnId").ele("BIC", {}, parsedDetails.debtorBIC);
+        pmtInf.ele("ChrgBr", {}, "SLEV");
+
+        // Add credit transfer information for each employee
+        parsedData.employees.forEach((emp, index) => {
+            const cdtTrfTxInf = pmtInf.ele("CdtTrfTxInf");
+            const pmtId = cdtTrfTxInf.ele("PmtId");
+            pmtId.ele("InstrId", {}, `InstrID_${index + 1}`);
+            pmtId.ele("EndToEndId", {}, emp.endToEndId);
+            const empPmtTpInf = cdtTrfTxInf.ele("PmtTpInf");
+            empPmtTpInf.ele("SvcLvl").ele("Cd", {}, "SEPA");
+            empPmtTpInf.ele("CtgyPurp").ele("Cd", {}, "SALA");
+            cdtTrfTxInf.ele("Amt").ele("InstdAmt", { Ccy: "EUR" }, emp.amount.toFixed(2));
+            cdtTrfTxInf.ele("ChrgBr", {}, "SLEV");
+            const cdtr = cdtTrfTxInf.ele("Cdtr");
+            cdtr.ele("Nm", {}, emp.name);
+            const cdtrAdr = cdtr.ele("PstlAdr");
+            cdtrAdr.ele("Ctry", {}, emp.country);
+            emp.addressLines.forEach((line) => {
+                cdtrAdr.ele("AdrLine", {}, line);
+            });
+            const cdtrAcct = cdtTrfTxInf.ele("CdtrAcct");
+            cdtrAcct.ele("Id").ele("IBAN", {}, emp.iban);
+            cdtTrfTxInf.ele("RmtInf").ele("Ustrd", {}, emp.remittanceInfo);
+        });
+
+        // Convert to XML string and save to a file
+        const xmlString = doc.end({ prettyPrint: true });
+        fs.writeFileSync(outputFilePath, xmlString, "utf8");
+        console.log("XML file created successfully:", outputFilePath);
+    } catch (err) {
+        console.error("Error generating XML:", err.message);
+    }
+}
+
+// Example usage
+const parsedData = {
+    employees: [
+        {
+            endToEndId: "1 beneficiary",
+            amount: 50000.0,
+            name: "Beneficiary Name and Surname",
+            country: "CY",
+            addressLines: ["address line1", "address line2"],
+            iban: "CYxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            remittanceInfo: "CHK LIN 1......................END",
+        },
+        {
+            endToEndId: "new beneficiary",
+            amount: 1000.99,
+            name: "1234567890123",
+            country: "GB",
+            addressLines: ["address line1"],
+            iban: "CYxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            remittanceInfo: "Payment details",
+        },
+    ],
+};
+
+const parsedDetails = {
+    totalAmount: 51000.99,
+    companyName: "COMPANY NAME 1",
+    companyID: "xxx",
+    executionDate: "2016-01-18",
+    debtorName: "Different company name 2",
+    debtorCountry: "DK",
+    debtorBIC: "BCYPCY2N",
+    debtorIBAN: "CYxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    currency: "EUR",
+};
+
+generateXML(parsedData, parsedDetails, "output.xml");
+
+
+Bank of cyprus xml
+This XML file does not appear to have any style information associated with it.The document tree is shown below.
+< Document xmlns: xsi = "http://www.w3.org/2001/XMLSchema-instance" xmlns = "urn:iso:std:iso:20022:tech:xsd:pain.001.001.03" xsi: schemaLocation = "urn:iso:std:iso:20022:tech:xsd:pain.001.001.03 pain.001.001.03.xsd" >
+    <CstmrCdtTrfInitn>
+        <GrpHdr>
+            <MsgId>eee</MsgId>
+            <CreDtTm>2016-02-17T12:49:35</CreDtTm>
+            <NbOfTxs>2</NbOfTxs>
+            <CtrlSum>51000.99</CtrlSum>
+            <InitgPty>
+                <Nm>cOMPANY NAME 1</Nm>
+                <Id>
+                    <OrgId>
+                        <Othr>
+                            <Id>xxx</Id>
+                        </Othr>
+                    </OrgId>
+                </Id>
+            </InitgPty>
+        </GrpHdr>
+        <PmtInf>
+            <PmtInfId>PmtInfId</PmtInfId>
+            <PmtMtd>TRF</PmtMtd>
+            <BtchBookg>1</BtchBookg>
+            <PmtTpInf>
+                <SvcLvl>
+                    <Cd>SEPA</Cd>
+                </SvcLvl>
+            </PmtTpInf>
+            <ReqdExctnDt>2016-01-18</ReqdExctnDt>
+            <Dbtr>
+                <Nm>Different company name 2</Nm>
+                <PstlAdr>
+                    <Ctry>DK</Ctry>
+                </PstlAdr>
+                <Id>
+                    <OrgId>
+                        <BICOrBEI>BCYPCY2N</BICOrBEI>
+                    </OrgId>
+                </Id>
+            </Dbtr>
+            <DbtrAcct>
+                <Id>
+                    <IBAN>CYxxxxxxxxxxxxxxxxxxxxxxxxxx</IBAN>
+                </Id>
+                <Ccy>EUR</Ccy>
+            </DbtrAcct>
+            <DbtrAgt>
+                <FinInstnId>
+                    <BIC>BCYPCY2N</BIC>
+                </FinInstnId>
+            </DbtrAgt>
+            <ChrgBr>SLEV</ChrgBr>
+            <CdtTrfTxInf>
+                <PmtId>
+                    <InstrId>DK cheque1</InstrId>
+                    <EndToEndId>1 beneficiary</EndToEndId>
+                </PmtId>
+                <PmtTpInf>
+                    <SvcLvl>
+                        <Cd>SEPA</Cd>
+                    </SvcLvl>
+                    <CtgyPurp>
+                        <Cd>SALA</Cd>
+                    </CtgyPurp>
+                </PmtTpInf>
+                <Amt>
+                    <InstdAmt Ccy="EUR">50000.00</InstdAmt>
+                </Amt>
+                <ChrgBr>SLEV</ChrgBr>
+                <Cdtr>
+                    <Nm>Beneficiary Name and Surname</Nm>
+                    <PstlAdr>
+                        <Ctry>CY</Ctry>
+                        <AdrLine>address line1</AdrLine>
+                        <AdrLine>address line2</AdrLine>
+                    </PstlAdr>
+                    <Id>
+                        <PrvtId>
+                            <DtAndPlcOfBirth>
+                                <BirthDt>1998-03-30</BirthDt>
+                                <PrvcOfBirth>Nicosia</PrvcOfBirth>
+                                <CityOfBirth>Nicosia</CityOfBirth>
+                                <CtryOfBirth>CY</CtryOfBirth>
+                            </DtAndPlcOfBirth>
+                        </PrvtId>
+                    </Id>
+                </Cdtr>
+                <CdtrAcct>
+                    <Id>
+                        <IBAN>CYxxxxxxxxxxxxxxxxxxxxxxxxxx</IBAN>
+                    </Id>
+                </CdtrAcct>
+                <RmtInf>
+                    <Ustrd>CHK LIN 1......................END</Ustrd>
+                </RmtInf>
+            </CdtTrfTxInf>
+            <CdtTrfTxInf>
+                <PmtId>
+                    <EndToEndId>new beneficiary</EndToEndId>
+                </PmtId>
+                <PmtTpInf>
+                    <SvcLvl>
+                        <Cd>SEPA</Cd>
+                    </SvcLvl>
+                    <CtgyPurp>
+                        <Cd>SALA</Cd>
+                    </CtgyPurp>
+                </PmtTpInf>
+                <Amt>
+                    <InstdAmt Ccy="EUR">1000.99</InstdAmt>
+                </Amt>
+                <ChrgBr>SLEV</ChrgBr>
+                <CdtrAgt>
+                    <FinInstnId>
+                        <BIC>ABKLCY2NXXX</BIC>
+                    </FinInstnId>
+                </CdtrAgt>
+                <Cdtr>
+                    <Nm>1234567890123</Nm>
+                    <PstlAdr>
+                        <Ctry>GB</Ctry>
+                        <AdrLine>address line1</AdrLine>
+                    </PstlAdr>
+                </Cdtr>
+                <CdtrAcct>
+                    <Id>
+                        <IBAN>CYxxxxxxxxxxxxxxxxxxxxxxxxxx</IBAN>
+                    </Id>
+                </CdtrAcct>
+                <RmtInf>
+                    <Ustrd>Payment details</Ustrd>
+                </RmtInf>
+            </CdtTrfTxInf>
+        </PmtInf>
+    </CstmrCdtTrfInitn>
+</Document >

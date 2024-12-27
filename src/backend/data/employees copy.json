@@ -1,0 +1,381 @@
+{
+  "employees": [
+    {
+      "name": "Yiannis Tofis",
+      "role": "Director",
+      "bonus": "50",
+      "iban": "",
+      "addressLine": "",
+      "basicSalary": 1500,
+      "normalHours": 173.3,
+      "overtimeHours": 10,
+      "workedHours": 188.3,
+      "contributions": {
+        "amount": 1629.8326601269475
+      },
+      "deductions": 178.46667628390077,
+      "finalSalary": "1501.37",
+      "grossPay": 1629.8326601269475,
+      "netPay": 1451.3659838430467,
+      "totalEmployerExpense": 1872.6777264858626
+    },
+    {
+      "name": "Hadjinicolaou Nicolas",
+      "role": "Director",
+      "bonus": "50",
+      "iban": "CY88002001950000357025473758",
+      "addressLine": "",
+      "basicSalary": 1500,
+      "normalHours": 173.3,
+      "overtimeHours": 10,
+      "workedHours": 188.3,
+      "contributions": {
+        "amount": 1629.8326601269475
+      },
+      "deductions": 178.46667628390077,
+      "finalSalary": "1501.37",
+      "grossPay": 1629.8326601269475,
+      "netPay": 1451.3659838430467,
+      "totalEmployerExpense": 1872.6777264858626
+    },
+    {
+      "name": "Christakis Christodoulou",
+      "role": "Director",
+      "bonus": "50",
+      "iban": "CY30002001150000001102473200",
+      "addressLine": "",
+      "basicSalary": 1500,
+      "normalHours": 173.3,
+      "overtimeHours": 10,
+      "workedHours": 188.3,
+      "contributions": {
+        "amount": 1629.8326601269475
+      },
+      "deductions": 178.46667628390077,
+      "finalSalary": "1501.37",
+      "grossPay": 1629.8326601269475,
+      "netPay": 1451.3659838430467,
+      "totalEmployerExpense": 1872.6777264858626
+    },
+    {
+      "name": "Christos Hatzikyriakos",
+      "role": "PV Engineer",
+      "bonus": "0",
+      "iban": "",
+      "basicSalary": 1500,
+      "normalHours": 173.3,
+      "overtimeHours": 10,
+      "workedHours": 188.3,
+      "contributions": {
+        "amount": 1629.8326601269475
+      },
+      "deductions": {
+        "amount": 1629.8326601269475
+      },
+      "finalSalary": "1451.37"
+    },
+    {
+      "name": "Charalampos Dimitriou",
+      "role": "PV Engineer",
+      "bonus": "0",
+      "iban": "",
+      "basicSalary": 1500,
+      "normalHours": 173.3,
+      "overtimeHours": 10,
+      "workedHours": 188.3,
+      "contributions": {
+        "amount": 1629.8326601269475
+      },
+      "deductions": {
+        "amount": 1629.8326601269475
+      },
+      "finalSalary": "1451.37"
+    },
+    {
+      "name": "George Massa",
+      "role": "PV Engineer",
+      "bonus": "0",
+      "iban": "",
+      "basicSalary": 1500,
+      "normalHours": 173.3,
+      "overtimeHours": 10,
+      "workedHours": 188.3,
+      "contributions": {
+        "amount": 1629.8326601269475
+      },
+      "deductions": {
+        "amount": 1629.8326601269475
+      },
+      "finalSalary": "1451.37"
+    },
+    {
+      "name": "Christina Tsortanidou",
+      "role": "Marketing Manager",
+      "bonus": "0",
+      "iban": "",
+      "basicSalary": 1500,
+      "normalHours": 173.3,
+      "overtimeHours": 10,
+      "workedHours": 188.3,
+      "contributions": {
+        "amount": 1629.8326601269475
+      },
+      "deductions": {
+        "amount": 1629.8326601269475
+      },
+      "finalSalary": "1451.37"
+    },
+    {
+      "name": "Marios Ioannou",
+      "role": "PV Engineer",
+      "bonus": "0",
+      "iban": "CY36002005650000000000279200",
+      "basicSalary": 1500,
+      "normalHours": 173.3,
+      "overtimeHours": 10,
+      "workedHours": 188.3,
+      "contributions": {
+        "amount": 1629.8326601269475
+      },
+      "deductions": {
+        "amount": 1629.8326601269475
+      },
+      "finalSalary": "1451.37"
+    },
+    {
+      "name": "Marios Alexiou",
+      "role": "Sales and PV Design Engineer",
+      "bonus": "0",
+      "iban": "CY60002001950000357034901886",
+      "basicSalary": 1500,
+      "normalHours": 173.3,
+      "overtimeHours": 10,
+      "workedHours": 188.3,
+      "contributions": {
+        "amount": 1629.8326601269475
+      },
+      "deductions": {
+        "amount": 1629.8326601269475
+      },
+      "finalSalary": "1451.37"
+    },
+    {
+      "name": "Christina Papamichael",
+      "role": "ddddministrative Staff",
+      "bonus": "0",
+      "iban": "",
+      "basicSalary": "1503",
+      "normalHours": 175.3,
+      "overtimeHours": 10,
+      "workedHours": 190.3,
+      "contributions": {
+        "amount": 1631.6081003993156
+      },
+      "deductions": {
+        "amount": 1631.6081003993156
+      },
+      "finalSalary": "1452.95"
+    },
+    {
+      "name": "Paraskevi Charalambous",
+      "role": "Administrative Staff",
+      "bonus": "0",
+      "iban": "",
+      "basicSalary": 1500,
+      "normalHours": 173.3,
+      "overtimeHours": 10,
+      "workedHours": 188.3,
+      "contributions": {
+        "amount": 1629.8326601269475
+      },
+      "deductions": {
+        "amount": 1629.8326601269475
+      },
+      "finalSalary": "1451.37"
+    },
+    {
+      "name": "Michalis Kontos",
+      "role": "Warehouse Manager",
+      "bonus": "0",
+      "iban": "",
+      "basicSalary": 1500,
+      "normalHours": 177.3,
+      "overtimeHours": 10,
+      "workedHours": 192.3,
+      "contributions": {
+        "amount": 1626.9035532994924
+      },
+      "deductions": {
+        "amount": 1626.9035532994924
+      },
+      "finalSalary": "1448.76"
+    },
+    {
+      "name": "Simeon Platos",
+      "role": "Electrical Engineer",
+      "bonus": "0",
+      "iban": "CY95002001950000357029190769",
+      "basicSalary": 1500,
+      "normalHours": 173.3,
+      "overtimeHours": 10,
+      "workedHours": 188.3,
+      "contributions": {
+        "amount": 1629.8326601269475
+      },
+      "deductions": {
+        "amount": 1629.8326601269475
+      },
+      "finalSalary": "1451.37"
+    },
+    {
+      "name": "Antonis Mavromattis",
+      "role": "PV Installer",
+      "bonus": "0",
+      "iban": "CY12002001950000357004852732",
+      "basicSalary": 1500,
+      "normalHours": 173.3,
+      "overtimeHours": 10,
+      "workedHours": 188.3,
+      "contributions": {
+        "amount": 1629.8326601269475
+      },
+      "deductions": {
+        "amount": 1629.8326601269475
+      },
+      "finalSalary": "1451.37"
+    },
+    {
+      "name": "Marios Ligkos",
+      "role": "PV Installer",
+      "bonus": "0",
+      "iban": "CY33002001950000357030099805",
+      "basicSalary": 1500,
+      "normalHours": 176.3,
+      "overtimeHours": 10,
+      "workedHours": 191.3,
+      "contributions": {
+        "amount": 1627.6233692569485
+      },
+      "deductions": {
+        "amount": 1627.6233692569485
+      },
+      "finalSalary": "1449.40"
+    },
+    {
+      "name": "Giasoumis Giasemi",
+      "role": "Senior Research Officer",
+      "bonus": "0",
+      "iban": "",
+      "basicSalary": 1500,
+      "normalHours": 173.3,
+      "overtimeHours": 10,
+      "workedHours": 188.3,
+      "contributions": {
+        "amount": 1629.8326601269475
+      },
+      "deductions": {
+        "amount": 1629.8326601269475
+      },
+      "finalSalary": "1451.37"
+    },
+    {
+      "name": "Christiana Kenta",
+      "role": "Health & Safety Officer",
+      "bonus": "2",
+      "iban": "",
+      "basicSalary": 1500,
+      "normalHours": 173.3,
+      "overtimeHours": 13,
+      "workedHours": 192.8,
+      "contributions": {
+        "amount": 1668.7824581650318
+      },
+      "deductions": {
+        "amount": 1668.7824581650318
+      },
+      "finalSalary": "1488.05"
+    },
+    {
+      "name": "Stefanos Ioannou",
+      "role": "Software Engineer",
+      "bonus": "0",
+      "iban": "",
+      "basicSalary": 1500,
+      "normalHours": 175.3,
+      "overtimeHours": 10,
+      "workedHours": 190.3,
+      "contributions": {
+        "amount": 1628.3513976041072
+      },
+      "deductions": {
+        "amount": 1628.3513976041072
+      },
+      "finalSalary": "1450.05"
+    },
+    {
+      "name": "Charalambos Hadjifilippou",
+      "role": "Software Engineer",
+      "bonus": "0",
+      "iban": "CY57002001790000000101019600",
+      "basicSalary": 1500,
+      "normalHours": 175.3,
+      "overtimeHours": 10,
+      "workedHours": 190.3,
+      "contributions": {
+        "amount": 1628.3513976041072
+      },
+      "deductions": {
+        "amount": 1628.3513976041072
+      },
+      "finalSalary": "1450.05"
+    },
+    {
+      "name": "Yiannis Yiallourides",
+      "role": "Game Developer",
+      "bonus": "0",
+      "iban": "CY46002001950000357012728714",
+      "basicSalary": 1500,
+      "normalHours": 173.3,
+      "overtimeHours": 10,
+      "workedHours": 188.3,
+      "contributions": {
+        "amount": 1629.8326601269475
+      },
+      "deductions": 178.46667628390077,
+      "finalSalary": "1451.37",
+      "grossPay": 1629.8326601269475,
+      "netPay": 1451.3659838430467,
+      "totalEmployerExpense": 1872.6777264858626
+    },
+    {
+      "name": "Andreas Andreou",
+      "role": "Game Developer",
+      "bonus": "0",
+      "iban": "CY03002001950000357025859796",
+      "basicSalary": 1500,
+      "normalHours": 173.3,
+      "overtimeHours": 10,
+      "workedHours": 188.3,
+      "contributions": {
+        "amount": 1629.8326601269475
+      },
+      "deductions": 178.46667628390077,
+      "finalSalary": "1451.37",
+      "grossPay": 1629.8326601269475,
+      "netPay": 1451.3659838430467,
+      "totalEmployerExpense": 1872.6777264858626
+    }
+  ],
+  "details": {
+    "totalAmount": "24755.65",
+    "companyName": "Eletoyia Deep Tech Chain LTD",
+    "debtorName": "Eletoyia",
+    "debtorCountry": "CY",
+    "currency": "EUR",
+    "debtorBIC": "BCYPCY2N1234",
+    "companyID": "66T",
+    "executionDate": "2024-12-08T22:00:00.000Z",
+    "debtorIBAN": "CY97002001950000357031584499"
+  },
+  "remittanceInfo": "SALARY FOR DEC 2024"
+}

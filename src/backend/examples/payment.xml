@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.09"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CstmrCdtTrfInitn>
+    <GrpHdr>
+      <MsgId>MessageID</MsgId>
+      <CreDtTm>2024-12-24</CreDtTm>
+      <NbOfTxs>18</NbOfTxs>
+      <CtrlSum>26053.38</CtrlSum>
+      <InitgPty>
+        <Nm>Eletoyia Deep Tech Chain LTD</Nm>
+        <Id>
+          <OrgId>
+            <Othr>
+              <Id>66T</Id>
+            </Othr>
+          </OrgId>
+        </Id>
+      </InitgPty>
+    </GrpHdr>
+    <PmtInf>
+      <PmtInfId>PmtInfId</PmtInfId>
+      <PmtMtd>TRF</PmtMtd>
+      <BtchBookg>1</BtchBookg>
+      <PmtTpInf>
+        <SvcLvl>
+          <Cd>SEPA</Cd>
+        </SvcLvl>
+      </PmtTpInf>
+      <ReqdExctnDt>2024-12-08</ReqdExctnDt>
+      <Dbtr>
+        <Nm>Eletoyia</Nm>
+        <PstlAdr>
+          <Ctry>CY</Ctry>
+        </PstlAdr>
+        <Id>
+          <OrgId>
+            <BICOrBEI>BCYPCY2N1234</BICOrBEI>
+          </OrgId>
+        </Id>
+      </Dbtr>
+      <DbtrAcct>
+        <Id>
+          <IBAN>CY97002001950000357031584499</IBAN>
+        </Id>
+        <Ccy>EUR</Ccy>
+      </DbtrAcct>
+      <DbtrAgt>
+        <FinInstnId>
+          <BIC>BCYPCY2N1234</BIC>
+        </FinInstnId>
+      </DbtrAgt>
+      <ChrgBr>SLEV</ChrgBr>
+      <CdtTrfTxInf>
+        <PmtId>
+          <InstrId>InstrID_1</InstrId>
+          <EndToEndId />
+        </PmtId>
+        <PmtTpInf>
+          <SvcLvl>
+            <Cd>SEPA</Cd>
+          </SvcLvl>
+          <CtgyPurp>
+            <Cd>SALA</Cd>
+          </CtgyPurp>
+        </PmtTpInf>
+        <Amt>
+          <InstdAmt Ccy="EUR">1501.35</InstdAmt>
+        </Amt>
+        <ChrgBr>SLEV</ChrgBr>
+        <Cdtr>
+          <Nm>Hadjinicolaou Nicolas</Nm>
+          <PstlAdr>
+            <Ctry />
+            <AdrLine />
+          </PstlAdr>
+        </Cdtr>
+        <CdtrAcct>
+          <Id>
+            <IBAN>CY88002001950000357025473758</IBAN>
+          </Id>
+        </CdtrAcct>
+        <RmtInf>
+          <Ustrd>SALARY FOR DEC 2024</Ustrd>
+        </RmtInf>
+      </CdtTrfTxInf>
+      <CdtTrfTxInf>
+        <PmtId>
+          <InstrId>InstrID_2</InstrId>
+          <EndToEndId />
+        </PmtId>
+        <PmtTpInf>
+          <SvcLvl>
+            <Cd>SEPA</Cd>
+          </SvcLvl>
+          <CtgyPurp>
+            <Cd>SALA</Cd>
+          </CtgyPurp>
+        </PmtTpInf>
+        <Amt>
+          <InstdAmt Ccy="EUR">1335.75</InstdAmt>
+        </Amt>
+        <ChrgBr>SLEV</ChrgBr>
+        <Cdtr>
+          <Nm>Christakis Christodoulou</Nm>
+          <PstlAdr>
+            <Ctry />
+            <AdrLine />
+          </PstlAdr>
+        </Cdtr>
+        <CdtrAcct>
+          <Id>
+            <IBAN>CY30002001150000001102473200</IBAN>
+          </Id>
+        </CdtrAcct>
+        <RmtInf>
+          <Ustrd>SALARY FOR DEC 2024</Ustrd>
+        </RmtInf>
+      </CdtTrfTxInf>
+      <CdtTrfTxInf>
+        <PmtId>
+          <InstrId>InstrID_3</InstrId>
+          <EndToEndId />
+        </PmtId>
+        <PmtTpInf>
+          <SvcLvl>
+            <Cd>SEPA</Cd>
+          </SvcLvl>
+          <CtgyPurp>
+            <Cd>SALA</Cd>
+          </CtgyPurp>
+        </PmtTpInf>
+        <Amt>
+          <InstdAmt Ccy="EUR">1451.37</InstdAmt>
+        </Amt>
+        <ChrgBr>SLEV</ChrgBr>
+        <Cdtr>
+          <Nm>Christos Chatzikyriakou</Nm>
+          <PstlAdr>
+            <Ctry />
+            <AdrLine />
+          </PstlAdr>
+        </Cdtr>
+        <CdtrAcct>
+          <Id>
+            <IBAN>CY96002001950000357025466824</IBAN>
+          </Id>
+        </CdtrAcct>
+        <RmtInf>
+          <Ustrd>SALARY FOR DEC 2024</Ustrd>
+        </RmtInf>
+      </CdtTrfTxInf>
+      <CdtTrfTxInf>
+        <PmtId>
+          <InstrId>InstrID_4</InstrId>
+          <EndToEndId />
+        </PmtId>
+        <PmtTpInf>
+          <SvcLvl>
+            <Cd>SEPA</Cd>
+          </SvcLvl>
+          <CtgyPurp>
+            <Cd>SALA</Cd>
+          </CtgyPurp>
+        </PmtTpInf>
+        <Amt>
+          <InstdAmt Ccy="EUR">1451.37</InstdAmt>
+        </Amt>
+        <ChrgBr>SLEV</ChrgBr>
+        <Cdtr>
+          <Nm>Charalampos Demetriou</Nm>
+          <PstlAdr>
+            <Ctry />
+            <AdrLine />
+          </PstlAdr>
+        </Cdtr>
+        <CdtrAcct>
+          <Id>
+            <IBAN>CY62005004820004820184346901</IBAN>
+          </Id>
+        </CdtrAcct>
+        <RmtInf>
+          <Ustrd>SALARY FOR DEC 2024</Ustrd>
+        </RmtInf>
+      </CdtTrfTxInf>
+      <CdtTrfTxInf>
+        <PmtId>
+          <InstrId>InstrID_5</InstrId>
+          <EndToEndId />
+        </PmtId>
+        <PmtTpInf>
+          <SvcLvl>
+            <Cd>SEPA</Cd>
+          </SvcLvl>
+          <CtgyPurp>
+            <Cd>SALA</Cd>
+          </CtgyPurp>
+        </PmtTpInf>
+        <Amt>
+          <InstdAmt Ccy="EUR">1451.37</InstdAmt>
+        </Amt>
+        <ChrgBr>SLEV</ChrgBr>
+        <Cdtr>
+          <Nm>George Massa</Nm>
+          <PstlAdr>
+            <Ctry />
+            <AdrLine />
+          </PstlAdr>
+        </Cdtr>
+        <CdtrAcct>
+          <Id>
+            <IBAN>CY31002001950000357028141896</IBAN>
+          </Id>
+        </CdtrAcct>
+        <RmtInf>
+          <Ustrd>SALARY FOR DEC 2024</Ustrd>
+        </RmtInf>
+      </CdtTrfTxInf>
+      <CdtTrfTxInf>
+        <PmtId>
+          <InstrId>InstrID_6</InstrId>
+          <EndToEndId />
+        </PmtId>
+        <PmtTpInf>
+          <SvcLvl>
+            <Cd>SEPA</Cd>
+          </SvcLvl>
+          <CtgyPurp>
+            <Cd>SALA</Cd>
+          </CtgyPurp>
+        </PmtTpInf>
+        <Amt>
+          <InstdAmt Ccy="EUR">1451.37</InstdAmt>
+        </Amt>
+        <ChrgBr>SLEV</ChrgBr>
+        <Cdtr>
+          <Nm>Christina Tsortanidou</Nm>
+          <PstlAdr>
+            <Ctry />
+            <AdrLine />
+          </PstlAdr>
+        </Cdtr>
+        <CdtrAcct>
+          <Id>
+            <IBAN>CY75005005010005010188856901</IBAN>
+          </Id>
+        </CdtrAcct>
+        <RmtInf>
+          <Ustrd>SALARY FOR DEC 2024</Ustrd>
+        </RmtInf>
+      </CdtTrfTxInf>
+      <CdtTrfTxInf>
+        <PmtId>
+          <InstrId>InstrID_7</InstrId>
+          <EndToEndId />
+        </PmtId>
+        <PmtTpInf>
+          <SvcLvl>
+            <Cd>SEPA</Cd>
+          </SvcLvl>
+          <CtgyPurp>
+            <Cd>SALA</Cd>
+          </CtgyPurp>
+        </PmtTpInf>
+        <Amt>
+          <InstdAmt Ccy="EUR">1451.37</InstdAmt>
+        </Amt>
+        <ChrgBr>SLEV</ChrgBr>
+        <Cdtr>
+          <Nm>Marios Ioannou</Nm>
+          <PstlAdr>
+            <Ctry />
+            <AdrLine />
+          </PstlAdr>
+        </Cdtr>
+        <CdtrAcct>
+          <Id>
+            <IBAN>CY36002005650000000000279200</IBAN>
+          </Id>
+        </CdtrAcct>
+        <RmtInf>
+          <Ustrd>SALARY FOR DEC 2024</Ustrd>
+        </RmtInf>
+      </CdtTrfTxInf>
+      <CdtTrfTxInf>
+        <PmtId>
+          <InstrId>InstrID_8</InstrId>
+          <EndToEndId />
+        </PmtId>
+        <PmtTpInf>
+          <SvcLvl>
+            <Cd>SEPA</Cd>
+          </SvcLvl>
+          <CtgyPurp>
+            <Cd>SALA</Cd>
+          </CtgyPurp>
+        </PmtTpInf>
+        <Amt>
+          <InstdAmt Ccy="EUR">1451.37</InstdAmt>
+        </Amt>
+        <ChrgBr>SLEV</ChrgBr>
+        <Cdtr>
+          <Nm>Marios Alexiou</Nm>
+          <PstlAdr>
+            <Ctry />
+            <AdrLine />
+          </PstlAdr>
+        </Cdtr>
+        <CdtrAcct>
+          <Id>
+            <IBAN>CY60002001950000357034901886</IBAN>
+          </Id>
+        </CdtrAcct>
+        <RmtInf>
+          <Ustrd>SALARY FOR DEC 2024</Ustrd>
+        </RmtInf>
+      </CdtTrfTxInf>
+      <CdtTrfTxInf>
+        <PmtId>
+          <InstrId>InstrID_9</InstrId>
+          <EndToEndId />
+        </PmtId>
+        <PmtTpInf>
+          <SvcLvl>
+            <Cd>SEPA</Cd>
+          </SvcLvl>
+          <CtgyPurp>
+            <Cd>SALA</Cd>
+          </CtgyPurp>
+        </PmtTpInf>
+        <Amt>
+          <InstdAmt Ccy="EUR">1452.95</InstdAmt>
+        </Amt>
+        <ChrgBr>SLEV</ChrgBr>
+        <Cdtr>
+          <Nm>Christina Papamichael</Nm>
+          <PstlAdr>
+            <Ctry />
+            <AdrLine />
+          </PstlAdr>
+        </Cdtr>
+        <CdtrAcct>
+          <Id>
+            <IBAN>CY59002001950000357009698200</IBAN>
+          </Id>
+        </CdtrAcct>
+        <RmtInf>
+          <Ustrd>SALARY FOR DEC 2024</Ustrd>
+        </RmtInf>
+      </CdtTrfTxInf>
+      <CdtTrfTxInf>
+        <PmtId>
+          <InstrId>InstrID_10</InstrId>
+          <EndToEndId />
+        </PmtId>
+        <PmtTpInf>
+          <SvcLvl>
+            <Cd>SEPA</Cd>
+          </SvcLvl>
+          <CtgyPurp>
+            <Cd>SALA</Cd>
+          </CtgyPurp>
+        </PmtTpInf>
+        <Amt>
+          <InstdAmt Ccy="EUR">1451.37</InstdAmt>
+        </Amt>
+        <ChrgBr>SLEV</ChrgBr>
+        <Cdtr>
+          <Nm>Paraskevi Charalambous</Nm>
+          <PstlAdr>
+            <Ctry />
+            <AdrLine />
+          </PstlAdr>
+        </Cdtr>
+        <CdtrAcct>
+          <Id>
+            <IBAN>CY41002001950000357025746398</IBAN>
+          </Id>
+        </CdtrAcct>
+        <RmtInf>
+          <Ustrd>SALARY FOR DEC 2024</Ustrd>
+        </RmtInf>
+      </CdtTrfTxInf>
+      <CdtTrfTxInf>
+        <PmtId>
+          <InstrId>InstrID_11</InstrId>
+          <EndToEndId />
+        </PmtId>
+        <PmtTpInf>
+          <SvcLvl>
+            <Cd>SEPA</Cd>
+          </SvcLvl>
+          <CtgyPurp>
+            <Cd>SALA</Cd>
+          </CtgyPurp>
+        </PmtTpInf>
+        <Amt>
+          <InstdAmt Ccy="EUR">1448.76</InstdAmt>
+        </Amt>
+        <ChrgBr>SLEV</ChrgBr>
+        <Cdtr>
+          <Nm>Michalis Kontos</Nm>
+          <PstlAdr>
+            <Ctry />
+            <AdrLine />
+          </PstlAdr>
+        </Cdtr>
+        <CdtrAcct>
+          <Id>
+            <IBAN>CY660050014900014910E5445401</IBAN>
+          </Id>
+        </CdtrAcct>
+        <RmtInf>
+          <Ustrd>SALARY FOR DEC 2024</Ustrd>
+        </RmtInf>
+      </CdtTrfTxInf>
+      <CdtTrfTxInf>
+        <PmtId>
+          <InstrId>InstrID_12</InstrId>
+          <EndToEndId />
+        </PmtId>
+        <PmtTpInf>
+          <SvcLvl>
+            <Cd>SEPA</Cd>
+          </SvcLvl>
+          <CtgyPurp>
+            <Cd>SALA</Cd>
+          </CtgyPurp>
+        </PmtTpInf>
+        <Amt>
+          <InstdAmt Ccy="EUR">1451.37</InstdAmt>
+        </Amt>
+        <ChrgBr>SLEV</ChrgBr>
+        <Cdtr>
+          <Nm>Simeon Platos</Nm>
+          <PstlAdr>
+            <Ctry />
+            <AdrLine />
+          </PstlAdr>
+        </Cdtr>
+        <CdtrAcct>
+          <Id>
+            <IBAN>CY95002001950000357029190769</IBAN>
+          </Id>
+        </CdtrAcct>
+        <RmtInf>
+          <Ustrd>SALARY FOR DEC 2024</Ustrd>
+        </RmtInf>
+      </CdtTrfTxInf>
+      <CdtTrfTxInf>
+        <PmtId>
+          <InstrId>InstrID_13</InstrId>
+          <EndToEndId />
+        </PmtId>
+        <PmtTpInf>
+          <SvcLvl>
+            <Cd>SEPA</Cd>
+          </SvcLvl>
+          <CtgyPurp>
+            <Cd>SALA</Cd>
+          </CtgyPurp>
+        </PmtTpInf>
+        <Amt>
+          <InstdAmt Ccy="EUR">1451.37</InstdAmt>
+        </Amt>
+        <ChrgBr>SLEV</ChrgBr>
+        <Cdtr>
+          <Nm>Antonis Mavromattis</Nm>
+          <PstlAdr>
+            <Ctry />
+            <AdrLine />
+          </PstlAdr>
+        </Cdtr>
+        <CdtrAcct>
+          <Id>
+            <IBAN>CY12002001950000357004852732</IBAN>
+          </Id>
+        </CdtrAcct>
+        <RmtInf>
+          <Ustrd>SALARY FOR DEC 2024</Ustrd>
+        </RmtInf>
+      </CdtTrfTxInf>
+      <CdtTrfTxInf>
+        <PmtId>
+          <InstrId>InstrID_14</InstrId>
+          <EndToEndId />
+        </PmtId>
+        <PmtTpInf>
+          <SvcLvl>
+            <Cd>SEPA</Cd>
+          </SvcLvl>
+          <CtgyPurp>
+            <Cd>SALA</Cd>
+          </CtgyPurp>
+        </PmtTpInf>
+        <Amt>
+          <InstdAmt Ccy="EUR">1449.40</InstdAmt>
+        </Amt>
+        <ChrgBr>SLEV</ChrgBr>
+        <Cdtr>
+          <Nm>Marios Ligkos</Nm>
+          <PstlAdr>
+            <Ctry />
+            <AdrLine />
+          </PstlAdr>
+        </Cdtr>
+        <CdtrAcct>
+          <Id>
+            <IBAN>CY33002001950000357030099805</IBAN>
+          </Id>
+        </CdtrAcct>
+        <RmtInf>
+          <Ustrd>SALARY FOR DEC 2024</Ustrd>
+        </RmtInf>
+      </CdtTrfTxInf>
+      <CdtTrfTxInf>
+        <PmtId>
+          <InstrId>InstrID_15</InstrId>
+          <EndToEndId />
+        </PmtId>
+        <PmtTpInf>
+          <SvcLvl>
+            <Cd>SEPA</Cd>
+          </SvcLvl>
+          <CtgyPurp>
+            <Cd>SALA</Cd>
+          </CtgyPurp>
+        </PmtTpInf>
+        <Amt>
+          <InstdAmt Ccy="EUR">1450.05</InstdAmt>
+        </Amt>
+        <ChrgBr>SLEV</ChrgBr>
+        <Cdtr>
+          <Nm>Stefanos Ioannou</Nm>
+          <PstlAdr>
+            <Ctry />
+            <AdrLine />
+          </PstlAdr>
+        </Cdtr>
+        <CdtrAcct>
+          <Id>
+            <IBAN>CY39002001950000357006720175</IBAN>
+          </Id>
+        </CdtrAcct>
+        <RmtInf>
+          <Ustrd>SALARY FOR DEC 2024</Ustrd>
+        </RmtInf>
+      </CdtTrfTxInf>
+      <CdtTrfTxInf>
+        <PmtId>
+          <InstrId>InstrID_16</InstrId>
+          <EndToEndId />
+        </PmtId>
+        <PmtTpInf>
+          <SvcLvl>
+            <Cd>SEPA</Cd>
+          </SvcLvl>
+          <CtgyPurp>
+            <Cd>SALA</Cd>
+          </CtgyPurp>
+        </PmtTpInf>
+        <Amt>
+          <InstdAmt Ccy="EUR">1450.05</InstdAmt>
+        </Amt>
+        <ChrgBr>SLEV</ChrgBr>
+        <Cdtr>
+          <Nm>Charalambos Hadjifilippou</Nm>
+          <PstlAdr>
+            <Ctry />
+            <AdrLine />
+          </PstlAdr>
+        </Cdtr>
+        <CdtrAcct>
+          <Id>
+            <IBAN>CY57002001790000000101019600</IBAN>
+          </Id>
+        </CdtrAcct>
+        <RmtInf>
+          <Ustrd>SALARY FOR DEC 2024</Ustrd>
+        </RmtInf>
+      </CdtTrfTxInf>
+      <CdtTrfTxInf>
+        <PmtId>
+          <InstrId>InstrID_17</InstrId>
+          <EndToEndId />
+        </PmtId>
+        <PmtTpInf>
+          <SvcLvl>
+            <Cd>SEPA</Cd>
+          </SvcLvl>
+          <CtgyPurp>
+            <Cd>SALA</Cd>
+          </CtgyPurp>
+        </PmtTpInf>
+        <Amt>
+          <InstdAmt Ccy="EUR">1451.37</InstdAmt>
+        </Amt>
+        <ChrgBr>SLEV</ChrgBr>
+        <Cdtr>
+          <Nm>Yiannis Yiallourides</Nm>
+          <PstlAdr>
+            <Ctry />
+            <AdrLine />
+          </PstlAdr>
+        </Cdtr>
+        <CdtrAcct>
+          <Id>
+            <IBAN>CY46002001950000357012728714</IBAN>
+          </Id>
+        </CdtrAcct>
+        <RmtInf>
+          <Ustrd>SALARY FOR DEC 2024</Ustrd>
+        </RmtInf>
+      </CdtTrfTxInf>
+      <CdtTrfTxInf>
+        <PmtId>
+          <InstrId>InstrID_18</InstrId>
+          <EndToEndId />
+        </PmtId>
+        <PmtTpInf>
+          <SvcLvl>
+            <Cd>SEPA</Cd>
+          </SvcLvl>
+          <CtgyPurp>
+            <Cd>SALA</Cd>
+          </CtgyPurp>
+        </PmtTpInf>
+        <Amt>
+          <InstdAmt Ccy="EUR">1451.37</InstdAmt>
+        </Amt>
+        <ChrgBr>SLEV</ChrgBr>
+        <Cdtr>
+          <Nm>Andreas Andreou</Nm>
+          <PstlAdr>
+            <Ctry />
+            <AdrLine />
+          </PstlAdr>
+        </Cdtr>
+        <CdtrAcct>
+          <Id>
+            <IBAN>CY03002001950000357025859796</IBAN>
+          </Id>
+        </CdtrAcct>
+        <RmtInf>
+          <Ustrd>SALARY FOR DEC 2024</Ustrd>
+        </RmtInf>
+      </CdtTrfTxInf>
+    </PmtInf>
+  </CstmrCdtTrfInitn>
+</Document>

@@ -1,0 +1,191 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.03" xmlns_xsi="http://www.w3.org/2001/XMLSchema-instance" xsi_schemaLocation="urn:iso:std:iso:20022:tech:xsd:pain.001.001.03 pain.001.001.03.xsd">
+  <CstmrCdtTrfInitn>
+    <GrpHdr>
+      <MsgId>PAYMENT2024</MsgId>
+      <CreDtTm>2024-11-01T19:53:20.894348</CreDtTm>
+      <NbOfTxs>4</NbOfTxs>
+      <CtrlSum>20529.00</CtrlSum>
+      <InitgPty>
+        <Nm>ELETOYIA LTD</Nm>
+        <Id>
+          <OrgId>
+            <Othr>
+              <Id>YOUR_COMPANY_ID</Id>
+            </Othr>
+          </OrgId>
+        </Id>
+      </InitgPty>
+    </GrpHdr>
+    <PmtInf>
+      <PmtInfId>PmtInfId</PmtInfId>
+      <PmtMtd>TRF</PmtMtd>
+      <BtchBookg>1</BtchBookg>
+      <PmtTpInf>
+        <SvcLvl>
+          <Cd>SEPA</Cd>
+        </SvcLvl>
+      </PmtTpInf>
+      <ReqdExctnDt>2024-11-01</ReqdExctnDt>
+      <Dbtr>
+        <Nm>ELETOYIA LTD</Nm>
+        <PstlAdr>
+          <Ctry>CY</Ctry>
+        </PstlAdr>
+        <Id>
+          <OrgId>
+            <BICOrBEI>YOUR_BIC</BICOrBEI>
+          </OrgId>
+        </Id>
+      </Dbtr>
+      <DbtrAcct>
+        <Id>
+          <IBAN>YOUR_COMPANY_IBAN</IBAN>
+        </Id>
+        <Ccy>EUR</Ccy>
+      </DbtrAcct>
+      <DbtrAgt>
+        <FinInstnId>
+          <BIC>BCYPCY2N</BIC>
+        </FinInstnId>
+      </DbtrAgt>
+      <ChrgBr>SLEV</ChrgBr>
+      <CdtTrfTxInf>
+        <PmtId>
+          <InstrId>DK cheque1</InstrId>
+          <EndToEndId>1 beneficiary</EndToEndId>
+        </PmtId>
+        <PmtTpInf>
+          <SvcLvl>
+            <Cd>SEPA</Cd>
+          </SvcLvl>
+          <CtgyPurp>
+            <Cd>SALA</Cd>
+          </CtgyPurp>
+        </PmtTpInf>
+        <Amt>
+          <InstdAmt Ccy="EUR">820.00</InstdAmt>
+        </Amt>
+        <ChrgBr>DEBT</ChrgBr>
+        <Cdtr>
+          <Nm>Alice Johnson</Nm>
+          <PstlAdr>
+            <Ctry>CY</Ctry>
+            <AdrLine>address line1</AdrLine>
+            <AdrLine>address line2</AdrLine>
+          </PstlAdr>
+        </Cdtr>
+        <CdtrAcct>
+          <Id>
+            <IBAN>CY12345678901234567890123456</IBAN>
+          </Id>
+        </CdtrAcct>
+        <RmtInf>
+          <Ustrd>PAYMENT FOR SEPT 2024 ..... ELETOYIA</Ustrd>
+        </RmtInf>
+      </CdtTrfTxInf>
+      <CdtTrfTxInf>
+        <PmtId>
+          <InstrId>DK cheque2</InstrId>
+          <EndToEndId>2 beneficiary</EndToEndId>
+        </PmtId>
+        <PmtTpInf>
+          <SvcLvl>
+            <Cd>SEPA</Cd>
+          </SvcLvl>
+          <CtgyPurp>
+            <Cd>SALA</Cd>
+          </CtgyPurp>
+        </PmtTpInf>
+        <Amt>
+          <InstdAmt Ccy="EUR">770.00</InstdAmt>
+        </Amt>
+        <ChrgBr>DEBT</ChrgBr>
+        <Cdtr>
+          <Nm>Bob Smith</Nm>
+          <PstlAdr>
+            <Ctry>CY</Ctry>
+            <AdrLine>address line1</AdrLine>
+            <AdrLine>address line2</AdrLine>
+          </PstlAdr>
+        </Cdtr>
+        <CdtrAcct>
+          <Id>
+            <IBAN>CY12345678901234567890123457</IBAN>
+          </Id>
+        </CdtrAcct>
+        <RmtInf>
+          <Ustrd>PAYMENT FOR SEPT 2024 ..... ELETOYIA</Ustrd>
+        </RmtInf>
+      </CdtTrfTxInf>
+      <CdtTrfTxInf>
+        <PmtId>
+          <InstrId>DK cheque3</InstrId>
+          <EndToEndId>3 beneficiary</EndToEndId>
+        </PmtId>
+        <PmtTpInf>
+          <SvcLvl>
+            <Cd>SEPA</Cd>
+          </SvcLvl>
+          <CtgyPurp>
+            <Cd>SALA</Cd>
+          </CtgyPurp>
+        </PmtTpInf>
+        <Amt>
+          <InstdAmt Ccy="EUR">750.00</InstdAmt>
+        </Amt>
+        <ChrgBr>DEBT</ChrgBr>
+        <Cdtr>
+          <Nm>Charlie Brown</Nm>
+          <PstlAdr>
+            <Ctry>CY</Ctry>
+            <AdrLine>address line1</AdrLine>
+            <AdrLine>address line2</AdrLine>
+          </PstlAdr>
+        </Cdtr>
+        <CdtrAcct>
+          <Id>
+            <IBAN>CY12345678901234567890123458</IBAN>
+          </Id>
+        </CdtrAcct>
+        <RmtInf>
+          <Ustrd>PAYMENT FOR SEPT 2024 ..... ELETOYIA</Ustrd>
+        </RmtInf>
+      </CdtTrfTxInf>
+      <CdtTrfTxInf>
+        <PmtId>
+          <InstrId>DK cheque4</InstrId>
+          <EndToEndId>4 beneficiary</EndToEndId>
+        </PmtId>
+        <PmtTpInf>
+          <SvcLvl>
+            <Cd>SEPA</Cd>
+          </SvcLvl>
+          <CtgyPurp>
+            <Cd>SALA</Cd>
+          </CtgyPurp>
+        </PmtTpInf>
+        <Amt>
+          <InstdAmt Ccy="EUR">18189.00</InstdAmt>
+        </Amt>
+        <ChrgBr>DEBT</ChrgBr>
+        <Cdtr>
+          <Nm>stre</Nm>
+          <PstlAdr>
+            <Ctry>CY</Ctry>
+            <AdrLine>address line1</AdrLine>
+            <AdrLine>address line2</AdrLine>
+          </PstlAdr>
+        </Cdtr>
+        <CdtrAcct>
+          <Id>
+            <IBAN>te</IBAN>
+          </Id>
+        </CdtrAcct>
+        <RmtInf>
+          <Ustrd>PAYMENT FOR SEPT 2024 ..... ELETOYIA</Ustrd>
+        </RmtInf>
+      </CdtTrfTxInf>
+    </PmtInf>
+  </CstmrCdtTrfInitn>
+</Document>

@@ -1,0 +1,52 @@
+{
+  "employees": [
+    {
+      "name": "Hadjinicolaou Nicolas",
+      "role": "Director",
+      "bonus": "0",
+      "iban": "CY88002001950000357025473758",
+      "addressLine": "Agkastinas 24, Latsia, Nicosia, 2231",
+      "basicSalary": "0",
+      "normalHours": 174.4,
+      "overtimeHours": "0",
+      "workedHours": 189.4,
+      "contributions": {
+        "amount": 0
+      },
+      "deductions": {
+        "amount": 0
+      },
+      "finalSalary": "0.00"
+    },
+    {
+      "name": "Christakis Christodoulou",
+      "role": "Director",
+      "bonus": "0",
+      "iban": "CY30002001150000001102473200",
+      "addressLine": "Agkastinas 24, Latsia, Nicosia, 2231",
+      "basicSalary": "0",
+      "normalHours": 173.33,
+      "overtimeHours": 0,
+      "workedHours": 173.33,
+      "contributions": {
+        "amount": 0
+      },
+      "deductions": {
+        "amount": 0
+      },
+      "finalSalary": "0.00"
+    }
+  ],
+  "details": {
+    "totalAmount": "0.00",
+    "companyName": "Eletoyia Deep Tech Chain LTD",
+    "debtorName": "Eletoyia",
+    "debtorCountry": "CY",
+    "currency": "EUR",
+    "debtorBIC": "BCYPCY2N",
+    "companyID": "66T",
+    "executionDate": "2024-12-08T22:00:00.000Z",
+    "debtorIBAN": "CY97002001950000357031584499"
+  },
+  "remittanceInfo": "SALARY FOR DEC 2024"
+}
